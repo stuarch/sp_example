@@ -4,8 +4,8 @@ vc=require("speechtotxt")
 cmd_1_on = "gatttool --device=00:02:5B:00:15:1D --char-write-req --handle=0x000b --value=FA0301FE"
 cmd_1_off = "gatttool --device=00:02:5B:00:15:1D --char-write-req --handle=0x000b --value=FA0300FE"
 --另一個燈開關指令
-cmd_2_on = "LED 2 On"
-cmd_2_off = "LED 2 Off"
+cmd_2_on = "echo \"LED 2 On\""
+cmd_2_off = "echo \"LED 2 Off\""
 
 function wakeup()
     sp = vc.init(nil,"./sp/7179.lm","./sp/7179.dict")
