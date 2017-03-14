@@ -1,0 +1,106 @@
+Language model created by QuickLM on Tue Mar 14 02:15:52 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 18 sentences and 14 words
+
+\data\
+ngram 1=14
+ngram 2=30
+ngram 3=39
+
+\1-grams:
+-1.0280 </s> -0.3010
+-1.0280 <s> -0.2430
+-1.9823 CHAN -0.2730
+-1.6812 DENG -0.2730
+-1.9823 ER -0.2919
+-1.6812 GUAN -0.2583
+-1.6812 HAO -0.2919
+-1.1372 JIAN -0.1938
+-1.3802 KAI -0.2218
+-1.9823 QUAN -0.2730
+-1.3802 XIAO -0.2218
+-1.9823 YI -0.2919
+-1.3802 ZAI -0.2482
+-1.9823 ZHI -0.2378
+
+\2-grams:
+-1.2553 <s> CHAN 0.0000
+-1.2553 <s> ER 0.0000
+-1.2553 <s> QUAN 0.0000
+-0.7782 <s> XIAO 0.0000
+-1.2553 <s> YI 0.0000
+-0.9542 <s> ZAI -0.0512
+-0.6021 CHAN GUAN 0.0000
+-0.6021 CHAN KAI -0.1761
+-0.6021 DENG GUAN 0.0000
+-0.6021 DENG KAI -0.1761
+-0.3010 ER HAO 0.0000
+-0.3010 GUAN </s> -0.3010
+-0.3010 HAO DENG 0.0000
+-0.4929 JIAN </s> -0.3010
+-1.1461 JIAN KAI -0.1761
+-1.1461 JIAN XIAO -0.1383
+-1.4472 JIAN ZAI -0.0512
+-0.6021 KAI </s> -0.3010
+-0.6021 KAI JIAN -0.1326
+-0.6021 QUAN GUAN 0.0000
+-0.6021 QUAN KAI -0.1761
+-0.7270 XIAO JIAN -0.0580
+-1.2041 XIAO KAI -0.1761
+-0.9031 XIAO ZAI 0.0000
+-0.9031 XIAO ZHI 0.0000
+-0.3010 YI HAO 0.0000
+-0.3590 ZAI JIAN -0.0300
+-1.2041 ZAI KAI -0.1761
+-0.6021 ZHI </s> -0.3010
+-0.6021 ZHI ZAI -0.0512
+
+\3-grams:
+-0.6021 <s> CHAN GUAN
+-0.6021 <s> CHAN KAI
+-0.3010 <s> ER HAO
+-0.6021 <s> QUAN GUAN
+-0.6021 <s> QUAN KAI
+-0.7782 <s> XIAO JIAN
+-1.0792 <s> XIAO KAI
+-0.7782 <s> XIAO ZAI
+-1.0792 <s> XIAO ZHI
+-0.3010 <s> YI HAO
+-0.3010 <s> ZAI JIAN
+-0.3010 CHAN GUAN </s>
+-0.3010 CHAN KAI </s>
+-0.3010 DENG GUAN </s>
+-0.3010 DENG KAI </s>
+-0.3010 ER HAO DENG
+-0.6021 HAO DENG GUAN
+-0.6021 HAO DENG KAI
+-0.3010 JIAN KAI JIAN
+-0.6021 JIAN XIAO JIAN
+-0.6021 JIAN XIAO ZHI
+-0.3010 JIAN ZAI JIAN
+-0.3010 KAI JIAN </s>
+-0.3010 QUAN GUAN </s>
+-0.3010 QUAN KAI </s>
+-0.7782 XIAO JIAN </s>
+-0.7782 XIAO JIAN KAI
+-0.7782 XIAO JIAN ZAI
+-0.3010 XIAO KAI JIAN
+-0.6021 XIAO ZAI JIAN
+-0.6021 XIAO ZAI KAI
+-0.6021 XIAO ZHI </s>
+-0.6021 XIAO ZHI ZAI
+-0.3010 YI HAO DENG
+-0.5441 ZAI JIAN </s>
+-1.1461 ZAI JIAN KAI
+-0.8451 ZAI JIAN XIAO
+-0.3010 ZAI KAI JIAN
+-0.3010 ZHI ZAI JIAN
+
+\end\

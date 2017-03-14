@@ -1,0 +1,45 @@
+Language model created by QuickLM on Thu Mar  9 16:34:12 EST 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 2 sentences and 6 words
+
+\data\
+ngram 1=6
+ngram 2=8
+ngram 3=8
+
+\1-grams:
+-1.0792 </s> -0.3010
+-1.0792 <s> -0.2218
+-1.0792 HAO -0.2218
+-1.0792 NI -0.2632
+-1.0792 XIAO -0.2632
+-1.0792 ZHI -0.2218
+
+\2-grams:
+-0.6021 <s> NI 0.0000
+-0.6021 <s> XIAO 0.0000
+-0.6021 HAO </s> -0.3010
+-0.6021 HAO XIAO 0.0000
+-0.3010 NI HAO 0.0000
+-0.3010 XIAO ZHI 0.0000
+-0.6021 ZHI </s> -0.3010
+-0.6021 ZHI NI 0.0000
+
+\3-grams:
+-0.3010 <s> NI HAO
+-0.3010 <s> XIAO ZHI
+-0.3010 HAO XIAO ZHI
+-0.6021 NI HAO </s>
+-0.6021 NI HAO XIAO
+-0.6021 XIAO ZHI </s>
+-0.6021 XIAO ZHI NI
+-0.3010 ZHI NI HAO
+
+\end\

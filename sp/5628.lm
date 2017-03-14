@@ -1,0 +1,60 @@
+Language model created by QuickLM on Mon Mar 13 08:03:44 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 7 sentences and 10 words
+
+\data\
+ngram 1=10
+ngram 2=14
+ngram 3=13
+
+\1-grams:
+-1.0000 </s> -0.3010
+-1.0000 <s> -0.2553
+-1.8451 CHAN -0.2553
+-1.2430 DENG -0.2621
+-1.5441 ER -0.2755
+-1.3680 GUAN -0.2553
+-1.2430 HAO -0.2755
+-1.3680 KAI -0.2553
+-1.5441 QUAN -0.2621
+-1.5441 YI -0.2755
+
+\2-grams:
+-1.1461 <s> CHAN 0.0000
+-0.8451 <s> ER 0.0000
+-0.8451 <s> QUAN 0.0000
+-0.8451 <s> YI 0.0000
+-0.3010 CHAN </s> -0.3010
+-0.6021 DENG GUAN 0.0000
+-0.6021 DENG KAI 0.0000
+-0.3010 ER HAO 0.0000
+-0.3010 GUAN </s> -0.3010
+-0.3010 HAO DENG 0.0000
+-0.3010 KAI </s> -0.3010
+-0.6021 QUAN GUAN 0.0000
+-0.6021 QUAN KAI 0.0000
+-0.3010 YI HAO 0.0000
+
+\3-grams:
+-0.3010 <s> CHAN </s>
+-0.3010 <s> ER HAO
+-0.6021 <s> QUAN GUAN
+-0.6021 <s> QUAN KAI
+-0.3010 <s> YI HAO
+-0.3010 DENG GUAN </s>
+-0.3010 DENG KAI </s>
+-0.3010 ER HAO DENG
+-0.6021 HAO DENG GUAN
+-0.6021 HAO DENG KAI
+-0.3010 QUAN GUAN </s>
+-0.3010 QUAN KAI </s>
+-0.3010 YI HAO DENG
+
+\end\

@@ -1,0 +1,74 @@
+Language model created by QuickLM on Thu Mar  9 16:52:56 EST 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 6 sentences and 14 words
+
+\data\
+ngram 1=14
+ngram 2=20
+ngram 3=17
+
+\1-grams:
+-1.0000 </s> -0.3010
+-1.0000 <s> -0.2389
+-1.7782 BO -0.2937
+-1.7782 FENG -0.2553
+-1.4771 JING -0.2389
+-1.7782 SHENG -0.2863
+-1.4771 SOU -0.2553
+-1.7782 TING -0.2553
+-1.7782 XIA -0.2863
+-1.4771 XIAO -0.2863
+-1.4771 YI -0.2863
+-1.4771 ZAI -0.2863
+-1.7782 ZHEN -0.2937
+-1.4771 ZHI -0.2389
+
+\2-grams:
+-1.0792 <s> BO 0.0000
+-1.0792 <s> SHENG 0.0000
+-1.0792 <s> XIA 0.0000
+-1.0792 <s> XIAO 0.0000
+-1.0792 <s> ZAI 0.0000
+-1.0792 <s> ZHEN 0.0000
+-0.3010 BO FENG 0.0000
+-0.3010 FENG </s> -0.3010
+-0.6021 JING </s> -0.3010
+-0.6021 JING XIAO 0.0000
+-0.3010 SHENG YI 0.0000
+-0.3010 SOU </s> -0.3010
+-0.3010 TING </s> -0.3010
+-0.3010 XIA YI 0.0000
+-0.3010 XIAO ZHI 0.0000
+-0.3010 YI SOU 0.0000
+-0.3010 ZAI JING 0.0000
+-0.3010 ZHEN TING 0.0000
+-0.6021 ZHI </s> -0.3010
+-0.6021 ZHI ZAI 0.0000
+
+\3-grams:
+-0.3010 <s> BO FENG
+-0.3010 <s> SHENG YI
+-0.3010 <s> XIA YI
+-0.3010 <s> XIAO ZHI
+-0.3010 <s> ZAI JING
+-0.3010 <s> ZHEN TING
+-0.3010 BO FENG </s>
+-0.3010 JING XIAO ZHI
+-0.3010 SHENG YI SOU
+-0.3010 XIA YI SOU
+-0.6021 XIAO ZHI </s>
+-0.6021 XIAO ZHI ZAI
+-0.3010 YI SOU </s>
+-0.6021 ZAI JING </s>
+-0.6021 ZAI JING XIAO
+-0.3010 ZHEN TING </s>
+-0.3010 ZHI ZAI JING
+
+\end\
