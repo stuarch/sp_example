@@ -4,12 +4,8 @@ vc=require("speechtotxt")
 cmd_1_on = "gatttool --device=00:02:5B:00:15:1D --char-write-req --handle=0x000b --value=FA0301FE"
 cmd_1_off = "gatttool --device=00:02:5B:00:15:1D --char-write-req --handle=0x000b --value=FA0300FE"
 --另一個燈開關指令
-cmd_2_on = ""
-cmd_2_off = ""
-
---全部一起動作開關
-cmd_all_on = ""
-cmd_all_off = ""
+cmd_2_on = "LED 2 On"
+cmd_2_off = "LED 2 Off"
 
 function wakeup()
     sp = vc.init(nil,"./sp/7179.lm","./sp/7179.dict")
@@ -120,14 +116,16 @@ function movements()
                  os.execute(cmd_1_on)
              elseif cnt==1 then
                  os.execute(cmd_1_on)
-              elseif cnt==2 then
+             elseif cnt==2 then
               	os.execute(cmd_2_on)
-              	elseif cnt==3 then
+             elseif cnt==3 then
               	os.execute(cmd_2_off)
-              	elseif cnt==4 then
-              	os.execute(cmd_all_on)
-              	elseif cnt==5 then
-              	os.execute(cmd_all_off)
+             elseif cnt==4 then
+              	os.execute(cmd_1_on)
+				os.execute(cmd_2_on)		
+             elseif cnt==5 then
+                os.execute(cmd_1_off)
+				os.execute(cmd_2_off)
              end
          elseif flag == 2 then
              print("\n=====Suspend=====\n")
