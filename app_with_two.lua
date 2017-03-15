@@ -30,7 +30,7 @@ function wakeup()
 end
 
 function movements()
-    sp = vc.init(nil,"./sp/4351.lm", "./sp/4351.dic")
+    sp = vc.init(nil,"./sp/4351.lm", "./sp/4351.dict")
     while true do
         txt = sp:inmic()
 --        mv = io.open("./movement.txt")
