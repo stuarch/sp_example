@@ -115,7 +115,7 @@ function movements()
              if cnt == 0 then
                  os.execute(cmd_1_on)
              elseif cnt==1 then
-                 os.execute(cmd_1_on)
+                 os.execute(cmd_1_off)
              elseif cnt==2 then
               	os.execute(cmd_2_on)
              elseif cnt==3 then
